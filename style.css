@@ -67,17 +67,60 @@ nav h1{
     border: none;
     margin: 2rem auto;
     cursor: pointer;
+    
 }
 .banner-img img{
     width: 100%;
 }
 
+/* ############# feature ############ */
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 5rem auto;
+    align-items: center;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.feature-text{
+    text-align: center;
+    padding: 0 3rem;
+}
+.gray{
+    color: var(--dark-03, #727272);
+    font-weight: 500;
+    font-size: 3rem;
+}
+.black{
+    color: var(--dark-01, #131313);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.orange{
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.feature-text p{
+    color: var(--dark-03, #727272);
+    line-height: 1.5rem ;
+    padding-top: 2rem;
+}
+.feature-text a{
+    text-decoration: none;
+    color: #FFF;
+
+}
 /* ########### responsive ########## */
 
 @media  screen and (max-width: 576px) {
     header{
         padding: 2rem;
-        
     }
     nav{
         flex-direction: column;
